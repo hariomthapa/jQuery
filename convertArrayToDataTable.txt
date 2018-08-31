@@ -1,0 +1,22 @@
+ public DataTable arrtodt(string[] ele)
+    {
+        DataTable _myDataTable = new DataTable();
+        string [] ar = new string[]{"Qualification","Board","PassingYear","TotalNo","ObtainNo","Percents","Grade"};
+        for (int i = 0; i < (ele.Length/2); i++)
+        {
+            _myDataTable.Columns.Add();
+            _myDataTable.Columns[i].ColumnName = ar[i];
+        }
+
+        for (int j = 0; j < ele.Length; j++)
+        {
+            DataRow row = _myDataTable.NewRow();
+            for (int i = 0; i < 7; i++)
+            {
+                row[i] = ele[i+j];
+            }
+            j += 6;
+            _myDataTable.Rows.Add(row);
+        }
+        return _myDataTable;
+    }
