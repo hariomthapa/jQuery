@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    Text: <input id="text" type="text"><br>
+
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js "></script>
+    <script>
+        var canvas = document.createElement('canvas'),
+       ctx = canvas.getContext('2d');
+
+        canvas.width = 200;
+        canvas.height = 200;
+        document.body.appendChild(canvas);
+
+        function sendToCanvas(ob) {
+            var img = new Image();
+            img.addEventListener('load', function () {
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                ctx.font = ob.fontWeight + ' ' + ob.fontSize + ' ' + ob.fontFamily;
+                ctx.textAlign = 'center';
+                ctx.fillStyle = ob.color;
+                ctx.fillText(ob.text, canvas.width / 2, canvas.height / 2.5);
+            });
+            img.src = ob.image;
+        }
+
+        // Defaults
+        var cvsObj = {
+            text: "",
+            image: "IMAGES/img2.jpg",
+            fontFamily: "Arial",
+            fontWeight: "bold",
+            fontSize: "90%",
+            color: "#000"
+        };
+
+        sendToCanvas(cvsObj); // Send default data on init
+
+        document.getElementById("text").addEventListener("input", function () {
+            cvsObj.text = this.value; // Modify cvsObj text
+            sendToCanvas(cvsObj);   // Send custom data on input
+        });
+
+    </script>
+</body>
+</html>
