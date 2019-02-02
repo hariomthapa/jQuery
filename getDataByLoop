@@ -1,0 +1,5 @@
+ $('#smlimgs h5, #smlimgs p').each(function () {
+            //alert($(this).html());
+            dn.push($(this).html());
+            $('#lists').append($(this).html()+'<br>');
+        });
