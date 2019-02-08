@@ -1,0 +1,30 @@
+<html>
+<head>
+ <script src="sweetalert-dev.js"></script>
+  <link rel="stylesheet" href="sweetalert.css"></head>
+<body>
+<button onclick="JSalert()">Show a fancy alert</button>
+INDEX
+<script type="text/javascript">
+function JSalert(){swal({   title: 'User ID : Kalia \n Pwd : 41s4d5f',   
+    text: "M.Ed. Login Details",   
+    type: "info",   
+    showCancelButton: false,   
+    confirmButtonColor: "#DD6B55",   
+    confirmButtonText: "OK",   
+    cancelButtonText: false,   
+    closeOnConfirm: false,   
+    closeOnCancel: false }, 
+    function(isConfirm){   
+        if (isConfirm) 
+    {   
+        window.location.href='about.html';
+        } 
+        else {     
+            swal("Hurray", "Account is not removed!", "error");   
+            } });
+}
+
+</script></body>
+
+</html>
