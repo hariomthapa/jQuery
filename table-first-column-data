@@ -1,0 +1,713 @@
+<html>
+<style>
+table, tr, td{
+	border:1px solid #000;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(
+function(){
+alert('Hello');
+var ar ;
+$( "table tbody tr" ).each(function() {
+  var cont = $(this).children('td').length;
+ if(cont==3)
+ {
+  var nam = $(this).find('td:eq(0)').html();
+  $('#names').append(nam+'<br>,');
+  }
+});
+
+
+}
+);
+</script>
+<div id="names">
+
+</div>
+<table>
+<tbody>
+<tr>
+<td style="text-align: center;" width="201"><strong>Tally Under Group&nbsp; Head</strong></td>
+<td style="text-align: center;" width="205"><strong>Ledger Name to be created&nbsp;</strong></td>
+<td style="text-align: center;" width="206"><strong>Descriptions</strong></td>
+</tr>
+<tr>
+<td>Branch/Divisions</td>
+<td width="auto">Delhi Branch</td>
+<td>All branches of a business</td>
+</tr>
+<tr>
+<td rowspan="4">Capital Account</td>
+<td width="205">Capital Account</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Partners /Owners Drawings A/c</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Share Capital A/C</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Partner’s Current Account</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">Reserves &amp; Surplus</td>
+<td width="205">General Reserve A/c</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Capital Reserve A/c</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="7">Current Asset</td>
+<td width="205">TDS Paid</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">TCS Paid</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Goodwill</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Bills Receivable</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Accrued Income</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Prepaid Insurance</td>
+<td width="206">To account the insurance paid for the next Financial year.</td>
+</tr>
+<tr>
+<td width="205">Income Tax Advance</td>
+<td></td>
+</tr>
+<tr>
+<td>Bank Accounts</td>
+<td width="205">Bank Accounts</td>
+<td rowspan="3" width="206">All bank account Current account, OD Account, CC Account, savings accounts etc. For&nbsp; Axis Bank A/c</td>
+</tr>
+<tr>
+<td width="201">Bank OCC Account</td>
+<td width="205">Bank CC Accounts</td>
+</tr>
+<tr>
+<td width="201">Bank OD Account</td>
+<td width="205">Bank&nbsp; OD Accounts</td>
+</tr>
+<tr>
+<td rowspan="2">Cash- In – Hand</td>
+<td width="205">Petty Cash A/c</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Cash A/c</td>
+<td>default account</td>
+</tr>
+<tr>
+<td rowspan="2">Deposit ( Asset )</td>
+<td width="205">NSC Deposits</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Fixed Deposits</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="4">Loans &amp;&nbsp; Advances (Asset)</td>
+<td width="205">Salary Advance</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Loans to sister concern</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Loans to director</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Loans to partner</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">Stock in hand</td>
+<td width="205">Opening Stock</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Closing Stock</td>
+<td></td>
+</tr>
+<tr>
+<td>Sundry Debtors</td>
+<td width="205">Customer Ledger</td>
+<td width="206">All customers ledger who buys products or services from business</td>
+</tr>
+<tr>
+<td rowspan="10">Current Liabilities</td>
+<td width="205">Bills Payable</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Outstanding Expense</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Lease Payable</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Income Tax payable</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">GST Payable</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">TDS Payable</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">TCS Payable</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Expense Payable</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Divident Payable</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Unearned Revenue</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="13">Duties &amp; Taxes</td>
+<td width="205">Sales Tax A/c</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Output Vat</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Input Vat</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">TDS Account</td>
+<td width="206">Eg: TDS on Interest</td>
+</tr>
+<tr>
+<td width="205">TCS Account</td>
+<td width="206">Eg: TCS on Motor vehcile</td>
+</tr>
+<tr>
+<td width="205">Excise Duty</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">CST A/c</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Service tax</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">CGST</td>
+<td>Type of duty should be gst</td>
+</tr>
+<tr>
+<td width="205">SGST</td>
+<td>,,</td>
+</tr>
+<tr>
+<td width="205">IGST</td>
+<td>,,</td>
+</tr>
+<tr>
+<td width="205">UGST</td>
+<td>,,</td>
+</tr>
+<tr>
+<td width="205">CESS</td>
+<td>Tax type selected cess</td>
+</tr>
+<tr>
+<td rowspan="10">Provisions</td>
+<td width="205">Provision for Bad Debts</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Audit Fee Payable</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Salary Payable</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Wages Payable</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">TDS Payable</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">TCS Payable</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Compound tax payable</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Income Tax Payable</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Telephone charges Payable</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Rent Payable</td>
+<td></td>
+</tr>
+<tr>
+<td>Sundry Creditors</td>
+<td width="205">Supplier Ledgers</td>
+<td width="206">The supllier from whome you purchase raw materials and other thng for business in credit.</td>
+</tr>
+<tr>
+<td rowspan="21">Direct Expense</td>
+<td width="205">Wages Account</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Repair &amp; Maintenance</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Freight Paid</td>
+<td width="206">Freight paid for the purchase of materials for selling or manufacturing</td>
+</tr>
+<tr>
+<td width="205">Factory Lighting</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Factory Rent</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Import Duty</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Royalty</td>
+<td width="206">For Mining, leasing etc</td>
+</tr>
+<tr>
+<td width="205">Labor</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Power</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Electricity charges ( Factory )</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Loading &amp; Unloading Exp</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Ware House Expense</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Custom clearing charges</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Carriage</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Freight Charges</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Coal &amp; Fuel</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Gas chares ( Factory )</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Water Charges ( Factory )</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Export Duty</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Delivery charges ( Buying raw material)</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Diesel Expense ( Factory )</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td rowspan="8">Fixed Asset</td>
+<td width="205">Land A/c</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Building</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Plant &amp; Machinery</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Motor Vehicles</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Furniture &amp; Fixtures</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Computer &amp; Peripherals</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Computer software</td>
+<td width="206">Most Expensive software if purchased</td>
+</tr>
+<tr>
+<td width="205">Long Term Investment</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td rowspan="48">Indirect Expense</td>
+<td width="205">Interest On Capital</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Salary Account</td>
+<td width="206">Vary in relation to the nature of business, Some time salary account termed as direct expense.</td>
+</tr>
+<tr>
+<td width="205">Directors Remuneration</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Partners salary</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Professional Fees</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205"></td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Legal charges</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Interest on loan</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Depreciation</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Amortization</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Audit Fee</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Insurance</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Local Conveyance</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Miscellaneous Expense</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Rates &amp; Taxes</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Round off</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Printing &amp; Stationery</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Travelling Expense</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Vehicle Expense</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Telephone Charges</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Communication Expense</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Advertising charges</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Discount Allowed</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Staff Welfare Expense</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Compound Tax Paid</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Courier Charges</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Commission Paid</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Interest on Income Tax</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Tea &amp; Coffee Expense</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Bank Charges</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Rent Expense ( Office )</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Maintenance Expense ( Office , Building )</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Sample Free</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Interest on VAT</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Interest on TDS</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Interest on TCS</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Donation &amp; Charity</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Penalty</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Loss by fire</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Loss By theft</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Legal Charges</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Bad Debts</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Diesel/Petrol Expense</td>
+<td width="206">For travelling, cars for managers etc</td>
+</tr>
+<tr>
+<td width="205">Freight Received</td>
+<td width="206">To account the freight charges received from customers. Eg: Transportation using Lorry</td>
+</tr>
+<tr>
+<td width="205">Scrap Sale</td>
+<td width="206">sale of small amount carton box, machinery damaged parts etc.</td>
+</tr>
+<tr>
+<td width="205">Commission Received</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Interest Received</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Interest On Investment Received</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td rowspan="6">Indirect Income</td>
+<td width="205">Freight Received</td>
+<td width="206">To account the freight charges received from customers. Eg: Transportation using Lorry</td>
+</tr>
+<tr>
+<td width="205">Commission Received</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Interest Received</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Interest On Investment Received</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Discount Received</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Bad Debt Recovered</td>
+<td></td>
+</tr>
+<tr>
+<td>Investments</td>
+<td>Investment in Share</td>
+<td></td>
+</tr>
+<tr>
+<td>Loans ( Liability)</td>
+<td width="205">Loan Account</td>
+<td width="206">For example If you take loans from a Private finance Create a LEDGER : L &amp; T Financial Services Loan A/c No: 1256 For Banking Institution :For Eg: ICICI Bank Loan a/c</td>
+</tr>
+<tr>
+<td>Bank OD A/c ( Bank OCC A/c )</td>
+<td width="205">Bank OD /CC Accounts</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="4">Secured Loans</td>
+<td width="205">Car loan</td>
+<td width="206">Loans raised by collateral</td>
+</tr>
+<tr>
+<td width="205">Housing Loan A/c</td>
+<td width="206"></td>
+</tr>
+<tr>
+<td width="205">Mortgage Loan</td>
+<td width="206">Assets are pledged against loans</td>
+</tr>
+<tr>
+<td width="205">Secured Credit card A/c</td>
+<td width="206">credit cards issued against fixed deposit</td>
+</tr>
+<tr>
+<td>Unsecured Loans</td>
+<td width="205">Students loan</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td width="205">Credit&nbsp; Cards</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td width="205">Personal Loans</td>
+<td></td>
+</tr>
+<tr>
+<td>Miscellaneous Expense ( Asset)</td>
+<td>Pre- operative expense</td>
+<td></td>
+</tr>
+<tr>
+<td>Purchase Account</td>
+<td width="205">All Purchase ledger created</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">Sales Account</td>
+<td width="205">Sale Ledger</td>
+<td></td>
+</tr>
+<tr>
+<td width="205">Scrap Sale Ledger</td>
+<td width="206">Sale of Machinery or other Big assets attract GST. This can be accounted under sale account.</td>
+</tr>
+<tr>
+<td>Suspense A/c</td>
+<td width="205">Suspense A/c</td>
+<td width="206">Any unknown payment received, any difference in cash balance could not figured out. Can put the balance under suspense until it is figured out.</td>
+</tr>
+<tr>
+<td>Profit &amp; Loss A/c</td>
+<td width="205">Profit &amp; loss account</td>
+<td>created automatically</td>
+</tr>
+</tbody>
+</table>
+</html>
