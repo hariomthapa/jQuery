@@ -1,0 +1,5 @@
+var person = '[{"fn":"John", "ln":"Doe", "ag":50, "ec":"blue"},{"fn":"Karan", "ln":"Singh", "ag":35, "ec":"red"}]';
+localStorage.setItem('items', person);
+	
+var tmpData = $.parseJSON(localStorage.getItem("items"));
+$('#result').html(tmpData[1].fn);
